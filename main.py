@@ -3,7 +3,7 @@ from flet import *
 def main(page):
     text = Text("Abdelalim",size=30,text_align=TextAlign.CENTER)
     spacer = Container(height=15)
-    img = Text("Es-solaymany",size=30,text_align=TextAlign.CENTER)
+    img = Image(src="img.png",size=30,text_align=TextAlign.CENTER)
 
     column  = Column(
         controls=[text,spacer,img],
