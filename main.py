@@ -12,6 +12,8 @@ def main(page):
     )
 
     page.add(column)
+    
+    page.update()
 
 
 
