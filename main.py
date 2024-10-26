@@ -1,18 +1,18 @@
-import flet as ft
+import flet as *
 
 def main(page):
-    text = ft.Text("Abdelalim",size=30,text_align=ft.TextAlign.CENTER)
-    spacer = ft.Container(height=15)
-    img = ft.Image(src="img.png",width=150,height=150)
+    text = Text("Abdelalim",size=30,text_align=TextAlign.CENTER)
+    spacer = Container(height=15)
+    img = Image(src="img.png",width=150,height=150)
 
-    column  = ft.Column(
+    column  = Column(
         controls=[text,spacer,img],
-        alignment=ft.MainAxisAlignment.CENTER,
-        horizontal_alignment=ft.CrossAxisAlignment.CENTER
+        alignment=MainAxisAlignment.CENTER,
+        horizontal_alignment=CrossAxisAlignment.CENTER
     )
 
     page.add(column)
 
 
 
-ft.app(target=main)
+app(target=main)
